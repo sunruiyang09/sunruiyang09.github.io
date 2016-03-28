@@ -1,0 +1,36 @@
+.work-intro {
+	background-color: black;
+    background: url("../img/work/work-intro.jpg") no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 200px;
+}
+
+.work {
+	margin-bottom: 30px;
+}
+
+.content-container {
+	padding-left: 40px;
+}
+
+.work-item {
+	margin-top: 20px;
+	padding-top: 30px;
+	border-top: 1px solid #eee;
+}
+
+.content-container h3 {
+	margin-top: 0;
+}
+
+.work img {
+	margin-bottom: 20px;
+	border: 2px solid white;
+}
+
+.work img:hover {
+	border-color: #aaa;
+}

@@ -1,0 +1,27 @@
+.contact-intro {
+	background-color: black;
+    background: url("../img/contact/contact-intro.jpg") no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 200px;
+}
+p {
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+.contact-me a {
+	font-size: 24px;
+	text-decoration: underline;
+}
+
+.link-container {
+	padding-top: 0px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.footer {
+    padding-top: 25px;
+}
