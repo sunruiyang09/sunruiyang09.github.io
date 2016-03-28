@@ -1,0 +1,74 @@
+h1 {
+	font-size: 40px;
+}
+
+p {
+	font-size: 16px;
+}
+.navbar a{
+	font-size: 18px;
+}
+.navbar {
+	margin: 0;
+}
+.home-intro .container h1 {
+	color: white;
+	margin-top: 80px;
+	margin-bottom: 30px;
+}
+.home-intro .container h4 {
+	color: white;
+}
+.home-intro {
+	background-color: black;
+    background: url("../img/home/home-intro.jpg") no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 400px;
+}
+.recent-work {
+	background-color: #eee;
+}
+.footer{
+	margin-top: 0;
+	background-color: #555;
+	height: 120px;
+	text-align: center;
+}
+.link-container {
+	padding-top: 25px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.link {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.content-container h3 {
+	margin-top: 0;
+}
+
+.recent-work img {
+	margin-bottom: 20px;
+	border: 2px solid white;
+}
+.recent-work img {
+	margin-bottom: 20px;
+	border: 2px solid #eee;
+}
+.recent-work img:hover {
+	border-color: #aaa;
+}
+
+.work-item {
+	margin-top: 20px;
+}
+
+.recent-work button {
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
