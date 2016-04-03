@@ -34,3 +34,11 @@
 .work img:hover {
 	border-color: #aaa;
 }
+
+
+@media screen and (max-width: 480px) {
+	.work-item img {
+		width: 180px;
+		height: auto;
+	}
+}
