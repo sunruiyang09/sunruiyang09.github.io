@@ -1,0 +1,107 @@
+h1 {
+	font-size: 40px;
+}
+
+p {
+	font-size: 16px;
+}
+
+.main {
+	margin-top: 53px;
+}
+.navbar a{
+	font-size: 18px;
+}
+.navbar {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 500;
+	margin: 0;
+	border-radius: 0;
+}
+.navbar-sry {
+	background-color: rgb(255, 255, 255);
+}
+.navbar-sry .navbar-toggle {
+	border: 1px solid #c7def3;
+}
+.navbar-sry .navbar-toggle:hover {
+	background-color: #c7def3;
+}
+.navbar-sry .navbar-toggle:focus {
+	background-color: #c7def3;
+}
+.navbar-sry .navbar-toggle .icon-bar{
+	background-color: #337ab7;
+}
+.home-intro .container h1 {
+	color: white;
+	margin-top: 80px;
+	margin-bottom: 30px;
+}
+.home-intro .container h4 {
+	color: white;
+}
+.home-intro {
+	background-color: black;
+    background: url("../img/home/home-intro.JPG") no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 400px;
+}
+.recent-work {
+	background-color: #eee;
+}
+.footer{
+	margin-top: 0;
+	background-color: #555;
+	height: 120px;
+	text-align: center;
+}
+.link-container {
+	padding-top: 25px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.link {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.content-container h3 {
+	margin-top: 0;
+}
+
+.recent-work img {
+	margin-bottom: 20px;
+	border: 2px solid white;
+}
+.recent-work img {
+	margin-bottom: 20px;
+	border: 2px solid #eee;
+}
+.recent-work img:hover {
+	border-color: #aaa;
+}
+
+.work-item {
+	margin-top: 20px;
+	padding-top: 30px;
+	border-top: 1px solid white;
+}
+
+.recent-work button {
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+@media screen and (max-width: 480px) {
+	.work-item img {
+		width: 180px;
+		height: auto;
+	}
+}

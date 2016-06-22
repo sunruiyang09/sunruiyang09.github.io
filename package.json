@@ -1,9 +1,9 @@
 {
-  "name": "angular-seed",
+  "name": "sunruiyang09",
   "private": true,
   "version": "0.0.0",
-  "description": "A starter project for AngularJS",
-  "repository": "https://github.com/angular/angular-seed",
+  "description": "Personal Website",
+  "repository": "https://github.com/sunruiyang09/sunruiyang09.github.io",
   "license": "MIT",
   "devDependencies": {
     "bower": "^1.7.7",

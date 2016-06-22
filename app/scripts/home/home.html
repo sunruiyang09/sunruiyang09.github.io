@@ -1,0 +1,27 @@
+<section class="home-intro">
+  <div class="container text-center">
+    <h1>Samson's Space</h1>
+    <h4>My name is Samson Ruiyang Sun and I'm a web developer in Silicon Valley.</h4>
+  </div>
+</section>
+
+<section class="recent-work">
+  <div class="container text-center">
+    <h2>Recent Work</h2>
+  </div>
+
+  <div class="container-fluid work-item" ng-repeat="item in workItem">
+    <div class="col-md-4 text-center">
+      <a target= "_blank" ng-href="{{item.url}}"><img ng-src="{{item.img}}"></a>
+    </div>
+    <div class="content-container col-md-8">
+      <h3>{{item.title}}</h3>
+      <p>{{item.content1}}</p>
+      <p>{{item.content2}}</p>
+    </div>
+  </div>
+  
+  <div class="text-center">
+    <a href="#!/work"><button type="button" class="btn btn-default">View More</button></a>
+  </div>
+</section>
