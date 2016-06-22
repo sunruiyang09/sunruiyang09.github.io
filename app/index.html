@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Samson(Ruiyang) Sun</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/app.css">
+  <link rel="stylesheet" type="text/css" href="css/work.css">
+  <link rel="stylesheet" type="text/css" href="css/gallery.css">
+  <link rel="stylesheet" type="text/css" href="css/about.css">
+  <link rel="stylesheet" type="text/css" href="css/contact.css">
+  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+  <nav class="navbar navbar-sry" role="navigation">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" ng-init="navCollapsed = true" ng-click="navCollapsed = !navCollapsed">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#!/home">Samson Ruiyang Sun</a>
+    </div>
+
+    <div class="collapse navbar-collapse" uib-collapse="navCollapsed">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#!/work">Work</a></li>
+        <li><a href="#!/gallery">Gallery</a></li>
+        <li><a href="#!/about">About</a></li>
+        <li><a href="#!/contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+  <div ng-view class="main"></div>
+
+  <section class="footer text-center">
+    <div class="link-container">
+      <a class="link" target= "_blank" href="https://www.linkedin.com/in/ruiyangsun"><img src="img/home/Linkedin-icon.png"></a>
+      <a class="link" target= "_blank" href="https://github.com/sunruiyang09"><img src="img/home/Github-icon.png"></a>
+    </div>
+    <p>&copy;Samson Ruiyang Sun. All rights reserved.</p>
+  </section>
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
+  <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+  <script src="scripts/app.js"></script>
+  <script src="scripts/home/home.js"></script>
+  <script src="scripts/work/work.js"></script>
+  <script src="scripts/gallery/gallery.js"></script>
+  <script src="scripts/about/about.js"></script>
+  <script src="scripts/contact/contact.js"></script>
+  <script src="components/version/version.js"></script>
+  <script src="components/version/version-directive.js"></script>
+  <script src="components/version/interpolate-filter.js"></script>
+</body>
+</html>
