@@ -1,6 +1,6 @@
 .gallery-intro {
-	background-color: black;
-    background: url("../img/gallery/gallery-intro.JPG") no-repeat center center; 
+	/*background-color: black;*/
+    /*background: url("../img/gallery/gallery-intro.JPG") no-repeat center center; */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -27,7 +27,7 @@
 }
 
 .graphic-gallery, .sketching-gallery {
-	border-top: solid 1px #eee;
+	border-top: solid 1px #fff;
 }
 
 .text {
@@ -39,11 +39,11 @@
 }
 
 .carousel-indicators li {
-    border: 1px solid #aaa;
+    border: 1px solid #eee;
 }
 
 .carousel-indicators .active {
-    background-color: #aaa;
+    background-color: #eee;
 }
 
 .carousel-control.left, .carousel-control.right {

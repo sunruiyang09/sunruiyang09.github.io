@@ -7,7 +7,6 @@ angular.module('myApp', [
   'myApp.work',
   'myApp.gallery',
   'myApp.about',
-  'myApp.contact',
   'myApp.version',
   'ui.bootstrap'
 ]).
