@@ -1,3 +1,33 @@
+@keyframes init {
+	from {opacity: 0; font-size: 0px;}
+	to {opacity: 1;}
+}
+
+@keyframes init2 {
+	from {opacity: 0; font-size: 32px;}
+	to {opacity: 1;}
+}
+
+@keyframes init3 {
+	from {top: 100vh;}
+	to {top: 60vh;}
+}
+
+@keyframes init4 {
+	from {margin-top: 100vh;}
+	to {margin-top: 10vh;}
+}
+
+@keyframes cloud-init {
+    from {}
+    to {left: 100%;}
+}
+
+@keyframes cloud {
+    from {left: -200px;}
+    to {left: 100%;}
+}
+
 h1 {
 	font-size: 40px;
 }
@@ -6,8 +36,14 @@ p {
 	font-size: 16px;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+	color: #254d74;
+}
+
 .main {
-	margin-top: 53px;
+	/*margin-top: 53px;*/
+	max-width: 1280px;
+	margin: 53px auto 0 auto;
 }
 .navbar a{
 	font-size: 18px;
@@ -36,29 +72,133 @@ p {
 	background-color: #337ab7;
 }
 .home-intro .container h1 {
-	color: white;
-	margin-top: 80px;
+	color: #254d74;
+	/*margin-top: 80px;*/
 	margin-bottom: 30px;
 }
 .home-intro .container h4 {
-	color: white;
+	color: #254d74;
 }
 .home-intro {
-	background-color: black;
-    background: url("../img/home/home-intro.JPG") no-repeat center center; 
+	/*background-color: black;*/
+    /*background: url("../img/home/home-intro.JPG") no-repeat center center; */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 400px;
+    height: 100vh;
+    padding-top: 20vh;
+}
+
+.home-intro h1 {
+	animation-name: init;
+    animation-duration: 2s;
+}
+.home-intro h4 {
+	animation-name: init;
+    animation-duration: 2s;
+}
+
+.general-background {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	background-color: #99ccff;
+	z-index: -1;
+}
+
+.cloud {
+	position: fixed;
+	animation-name: cloud;
+	animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.cloud-init {
+	position: fixed;
+	animation-name: cloud-init;
+	animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+.cloud1 {
+	/*position: fixed;*/
+	margin-top: 10vh;
+    animation-duration: 80s;
+}
+
+.cloud2 {
+	margin-top: 30vh;
+	width: 100px;
+	height: auto;
+	animation-duration: 150s;
+}
+
+.cloud3 {
+	margin-top: 50vh;
+	width: 150px;
+	height: auto;
+	animation-duration: 100s;
+}
+
+.cloud4 {
+	margin-top: 40vh;
+	left: 10%;
+	width: 200px;
+	height: auto;
+	animation-duration: 80s;
+}
+
+.cloud5 {
+	margin-top: 70vh;
+	width: 60px;
+	height: auto;
+	animation-duration: 120s;
+}
+
+.cloud6 {
+	margin-top: 80vh;
+	width: 80px;
+	height: auto;
+	animation-duration: 60s;
+}
+
+.cloud7 {
+	margin-top: 30vh;
+	left: 65%;
+	width: 80px;
+	height: auto;
+	animation-duration: 30s;
+}
+
+.cloud8 {
+	margin-top: 60vh;
+	left: 50%;
+	width: 150px;
+	height: auto;
+	animation-duration: 40s;
+}
+
+.nav-container {
+	margin-top: 100vh;
+	animation-name: init4;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+.nav-container button {
+	width: 80px;
+	margin: 0 10px;
+	transition-duration: 1s;
 }
 .recent-work {
-	background-color: #eee;
+	/*background-color: #ddd;*/
 }
 .footer{
 	margin-top: 0;
-	background-color: #555;
-	height: 120px;
+	background-color: rgba(255, 255, 255, 0.8);
+	height: 140px;
 	text-align: center;
 }
 .link-container {

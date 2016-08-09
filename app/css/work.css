@@ -1,4 +1,4 @@
-.work-intro {
+/*.work-intro {
 	background-color: black;
     background: url("../img/work/work-intro.JPG") no-repeat center center; 
     -webkit-background-size: cover;
@@ -6,8 +6,7 @@
     -o-background-size: cover;
     background-size: cover;
     height: 200px;
-}
-
+}*/
 .work {
 	margin-bottom: 30px;
 }
@@ -19,7 +18,7 @@
 .work-item {
 	margin-top: 20px;
 	padding-top: 30px;
-	border-top: 1px solid #eee;
+	border-top: 1px solid #fff;
 }
 
 .content-container h3 {
@@ -28,11 +27,13 @@
 
 .work img {
 	margin-bottom: 20px;
-	border: 2px solid white;
+	border-radius: 20px;
+	border: 3px solid rgba(255, 255, 255, 0);
+	transition-duration: 1s;
 }
 
 .work img:hover {
-	border-color: #aaa;
+	border-color: white;
 }
 
 
