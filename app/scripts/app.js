@@ -11,7 +11,7 @@ angular.module('myApp', [
   'ui.bootstrap'
 ])
 
-.run(function($window) {
+.run(function($window, $rootScope) {
   angular.element($window).bind('scroll', function(){
   	var nav = document.getElementById('navbar');
   	if(document.body.scrollTop > 50) {
@@ -22,6 +22,9 @@ angular.module('myApp', [
   	  angular.element(nav).addClass('navbar-show');
   	}
   });
+  angular.element(document).ready(function(){
+    $rootScope.myOpacity = 1;
+  })
 })
 
 .config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
