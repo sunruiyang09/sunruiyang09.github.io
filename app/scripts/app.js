@@ -22,7 +22,7 @@ angular.module('myApp', [
   	  angular.element(nav).addClass('navbar-show');
   	}
   });
-  angular.element(document).ready(function(){
+  angular.element($window).bind('load', function(){
     $rootScope.myOpacity = 1;
   })
 })
