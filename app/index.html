@@ -6,7 +6,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Samson(Ruiyang) Sun</title>
+  <title>Ruiyang's Portfolio</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
@@ -19,7 +19,7 @@
   <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
-  <nav class="navbar navbar-sry" role="navigation">
+  <nav id="navbar" class="navbar navbar-sry navbar-show" role="navigation">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" ng-init="navCollapsed = true" ng-click="navCollapsed = !navCollapsed">
           <span class="sr-only">Toggle navigation</span>
@@ -27,13 +27,13 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#!/home">Samson Ruiyang Sun</a>
+      <a class="navbar-brand" href="#!/home">Ruiyang (Samson) Sun</a>
     </div>
 
     <div class="collapse navbar-collapse" uib-collapse="navCollapsed">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#!/work">Work</a></li>
-        <li><a href="#!/gallery">Gallery</a></li>
+        <!-- <li><a href="#!/work">Work</a></li> -->
+        <li><a href="#!/interests">Interests</a></li>
         <li><a href="#!/about">About</a></li>
       </ul>
     </div>
@@ -46,37 +46,12 @@
 
   <div ng-view class="main"></div>
 
-  <div class="general-background">
-    <div>
-      <img class="cloud cloud1" src="img/cloud.png">
-    </div>
-    <div>
-      <img class="cloud cloud2" src="img/cloud.png">
-    </div>
-    <div>
-      <img class="cloud cloud3" src="img/cloud.png">
-    </div>
-    <div>
-      <img class="cloud-init cloud4" src="img/cloud.png">
-    </div>
-    <div>
-      <img class="cloud cloud5" src="img/cloud.png">
-    </div>
-    <div>
-      <img class="cloud cloud6" src="img/cloud.png">
-    </div>
-    <div>
-      <img class="cloud-init cloud7" src="img/cloud.png">
-    </div>
-    <div>
-      <img class="cloud-init cloud8" src="img/cloud.png">
-    </div>
-  </div>
-
   <section class="footer text-center">
     <div class="link-container">
-      <a class="link" target= "_blank" href="https://www.linkedin.com/in/ruiyangsun"><img src="img/home/Linkedin-icon.png"></a>
-      <a class="link" target= "_blank" href="https://github.com/sunruiyang09"><img src="img/home/Github-icon.png"></a>
+      <div class="icons icon-linkedIn"></div><a class="link" target= "_blank" href="https://www.linkedin.com/in/ruiyangsun"><div class="icons icon-linkedIn-show"></div></a>
+
+      <div class="icons icon-github"></div><a class="link" target= "_blank" href="https://github.com/sunruiyang09"><div class="icons icon-github-show"></div></a>
+      <div class="icons icon-none"></div>
     </div>
     <p>&copy;Samson Ruiyang Sun. All rights reserved.</p>
   </section>

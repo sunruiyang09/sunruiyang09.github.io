@@ -12,12 +12,12 @@ angular.module('myApp.about', ['ngRoute'])
 .controller('AboutCtrl', ['$scope', function($scope) {
   $scope.experiences = [
     {
-      'title':'PalmDrive Inc.',
-      'content':'Web Developer (Jan 2016 - May 2016)'
+      'title':'Oracle Corporation',
+      'content':'Web Developer (May 2016 - Aug 2016)'
     },
     {
-      'title':'Oracle Corporation',
-      'content':'Web Developer (May 2016 - Present)'
+      'title':'PalmDrive Inc.',
+      'content':'Web Developer (Jan 2016 - May 2016)'
     }
   ];
 }]);

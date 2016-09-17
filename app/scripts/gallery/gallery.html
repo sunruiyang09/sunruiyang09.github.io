@@ -1,6 +1,6 @@
 <section class="gallery">
   <div class="container text-center">
-    <h1>My Gallery</h1>
+    <h1>My Interests</h1>
     <p>I like graphic design and sketching. Here are some old work I have done.</p>
   </div>
 </section>
@@ -10,7 +10,7 @@
     <h2>Graphic Design</h2>
   </div>
   <div>
-    <uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+    <uib-carousel active="active1" interval="myInterval" no-wrap="noWrapSlides">
       <uib-slide ng-repeat="graphSlide in graphSlides track by graphSlide.id" index="graphSlide.id">
         <img ng-src="{{graphSlide.img}}" style="margin:auto;">
         <div>
@@ -28,7 +28,7 @@
   </div>
 
   <div>
-    <uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+    <uib-carousel active="active2" interval="myInterval" no-wrap="noWrapSlides">
       <uib-slide ng-repeat="sketchSlide in sketchSlides track by sketchSlide.id" index="sketchSlide.id">
         <img ng-src="{{sketchSlide.img}}" style="margin:auto;">
         <div>

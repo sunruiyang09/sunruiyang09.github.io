@@ -27,7 +27,7 @@
 }
 
 .graphic-gallery, .sketching-gallery {
-	border-top: solid 1px #fff;
+	border-top: solid 1px #ddd;
 }
 
 .text {
@@ -39,13 +39,17 @@
 }
 
 .carousel-indicators li {
-    border: 1px solid #eee;
+    border: 1px solid #80bfff;
 }
 
 .carousel-indicators .active {
-    background-color: #eee;
+    background-color: #80bfff;
 }
 
 .carousel-control.left, .carousel-control.right {
     background-image: none
+}
+
+.glyphicon-chevron-left, .glyphicon-chevron-right {
+    color: #80bfff;
 }

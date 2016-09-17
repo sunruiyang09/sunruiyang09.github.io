@@ -1,31 +1,38 @@
-@keyframes init {
-	from {opacity: 0; font-size: 0px;}
+@keyframes navbar-show {
+	from {top: -70px;}
+	to {top: 0px;}
+}
+
+@keyframes navbar-hidden {
+	from {top: 0px;}
+	to {top: -70px;}
+}
+
+@keyframes home-scale {
+	from {height: 100vh; padding-top: 20vh;}
+	to {height: 300px; padding-top: 0vh;}
+}
+
+@keyframes home-profile-scale {
+	from {left: 0; right: 0;}
+	to {right: 45vw; -ms-transform: scale(0.7); /* IE 9 */
+    -webkit-transform: scale(0.7); /* Chrome, Safari, Opera */
+    transform: scale(0.7);}
+}
+
+@keyframes tag-in {
+	from {}
 	to {opacity: 1;}
 }
 
-@keyframes init2 {
-	from {opacity: 0; font-size: 32px;}
+@keyframes show-view {
+	from {}
 	to {opacity: 1;}
 }
 
-@keyframes init3 {
-	from {top: 100vh;}
-	to {top: 60vh;}
-}
-
-@keyframes init4 {
-	from {margin-top: 100vh;}
-	to {margin-top: 10vh;}
-}
-
-@keyframes cloud-init {
-    from {}
-    to {left: 100%;}
-}
-
-@keyframes cloud {
-    from {left: -200px;}
-    to {left: 100%;}
+@keyframes pic-ease {
+	from {}
+	to {opacity: 0.15;}
 }
 
 h1 {
@@ -38,16 +45,36 @@ p {
 
 h1, h2, h3, h4, h5, h6, p {
 	color: #254d74;
+	font-weight: 300;
+}
+
+a {
+	font-weight: 300;
 }
 
 .main {
-	/*margin-top: 53px;*/
+	opacity: 0;
 	max-width: 1280px;
 	margin: 53px auto 0 auto;
+	animation-name: show-view;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
 }
 .navbar a{
 	font-size: 18px;
 }
+
+.navbar-nav > li > a {
+	transition-duration: 1s;
+}
+
+.navbar-nav > li > a:focus, .navbar-nav > li > a:hover {
+    background: none;
+}
+
+.navbar-nav > li > a:hover {
+}
+
 .navbar {
 	position: fixed;
 	top: 0;
@@ -56,8 +83,20 @@ h1, h2, h3, h4, h5, h6, p {
 	margin: 0;
 	border-radius: 0;
 }
+.navbar-hidden {
+	animation-name: navbar-hidden;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
+}
+.navbar-show {
+	animation-name: navbar-show;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
+}
+
 .navbar-sry {
-	background-color: rgb(255, 255, 255);
+	/*background-color: white;*/
+	/*box-shadow: 0px 1px 5px #888888;*/
 }
 .navbar-sry .navbar-toggle {
 	border: 1px solid #c7def3;
@@ -80,14 +119,13 @@ h1, h2, h3, h4, h5, h6, p {
 	color: #254d74;
 }
 .home-intro {
-	/*background-color: black;*/
-    /*background: url("../img/home/home-intro.JPG") no-repeat center center; */
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
     height: 100vh;
+    position: relative;
     padding-top: 20vh;
+    animation-name: home-scale;
+	animation-duration: 1s;
+	animation-delay: 1s;
+	animation-fill-mode: forwards;
 }
 
 .home-intro h1 {
@@ -99,84 +137,38 @@ h1, h2, h3, h4, h5, h6, p {
     animation-duration: 2s;
 }
 
-.general-background {
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	background-color: #99ccff;
-	z-index: -1;
+.intro-container {
+	/*margin-top: 100px;*/
+	/*display: inline-block;*/
 }
 
-.cloud {
-	position: fixed;
-	animation-name: cloud;
-	animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
-.cloud-init {
-	position: fixed;
-	animation-name: cloud-init;
+.home-intro-pic {
+	z-index: 100;
+	position: absolute;
+    left: 0;
+    right: 0;
+	/*animation-name: home-profile-scale;
+	animation-duration: 1s;
+	animation-delay: 1s;
 	animation-fill-mode: forwards;
-    animation-timing-function: linear;
+	animation-timing-function: linear;*/
 }
 
-.cloud1 {
-	/*position: fixed;*/
-	margin-top: 10vh;
-    animation-duration: 80s;
+.home-intro-tags {
+	padding-top: 70px;
 }
 
-.cloud2 {
-	margin-top: 30vh;
-	width: 100px;
-	height: auto;
-	animation-duration: 150s;
+.home-intro-tags p {
+	font-size: 24px;
+	font-weight: 100;
 }
 
-.cloud3 {
-	margin-top: 50vh;
-	width: 150px;
-	height: auto;
-	animation-duration: 100s;
-}
-
-.cloud4 {
-	margin-top: 40vh;
-	left: 10%;
-	width: 200px;
-	height: auto;
-	animation-duration: 80s;
-}
-
-.cloud5 {
-	margin-top: 70vh;
-	width: 60px;
-	height: auto;
-	animation-duration: 120s;
-}
-
-.cloud6 {
-	margin-top: 80vh;
-	width: 80px;
-	height: auto;
-	animation-duration: 60s;
-}
-
-.cloud7 {
-	margin-top: 30vh;
-	left: 65%;
-	width: 80px;
-	height: auto;
-	animation-duration: 30s;
-}
-
-.cloud8 {
-	margin-top: 60vh;
-	left: 50%;
-	width: 150px;
-	height: auto;
-	animation-duration: 40s;
+.tags-hide {
+	z-index: 50;
+	position: absolute;
+	height: 300px;
+	width: 30vw;
+	background-color: white;
 }
 
 .nav-container {
@@ -197,41 +189,72 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .footer{
 	margin-top: 0;
-	background-color: rgba(255, 255, 255, 0.8);
+	background-color: #4a4a4f;
 	height: 140px;
 	text-align: center;
 }
+
+.footer p {
+	color: #888;
+	font-size: 14px;
+	margin-top: 15px;
+}
+
 .link-container {
-	padding-top: 25px;
+	padding-top: 35px;
 	margin-bottom: 10px;
 	text-align: center;
 }
 
 .link {
-	margin-left: 5px;
-	margin-right: 5px;
+	/*margin-left: 5px;
+	margin-right: 5px;*/
+}
+
+.icons {
+	display: inline-block;
+	height: 30px;
+	width: 30px;
+	background: url("../img/sprite/sprite.png");
+}
+
+.icon-linkedIn {
+	position: relative;
+	left: 30px;
+}
+
+.icon-linkedIn-show {
+	opacity: 0;
+	background-position: 0 30px;
+	transition-duration: 1s;
+}
+
+.icon-linkedIn-show:hover {
+	opacity: 1;
+}
+
+.icon-github {
+	background-position: 30px 0;
+	position: relative;
+	left: 30px;
+}
+
+.icon-github-show {
+	opacity: 0;
+	background-position: 30px 30px;
+	transition-duration: 1s;
+}
+
+.icon-github-show:hover {
+	opacity: 1;
+}
+
+.icon-none {
+	visibility: hidden;
 }
 
 .content-container h3 {
 	margin-top: 0;
-}
-
-.recent-work img {
-	margin-bottom: 20px;
-	border: 2px solid white;
-}
-.recent-work img {
-	margin-bottom: 20px;
-	border: 2px solid #eee;
-}
-.recent-work img:hover {
-	border-color: #aaa;
-}
-
-.work-item {
-	margin-top: 20px;
-	padding-top: 30px;
-	border-top: 1px solid white;
 }
 
 .recent-work button {
@@ -239,9 +262,107 @@ h1, h2, h3, h4, h5, h6, p {
 	margin-bottom: 20px;
 }
 
+@media screen and (max-width: 980px) {
+	.navbar-sry {
+		background-color: white;
+		border-bottom: 1px solid #ddd;
+	}
+}
+
 @media screen and (max-width: 480px) {
 	.work-item img {
 		width: 180px;
 		height: auto;
+	}
+
+	.home-intro-pic {
+		z-index: -1;
+		transform: scale(0.8);
+	}
+
+	.home-intro-pic .profile {
+		animation-name: pic-ease;
+		animation-duration: 1s;
+		animation-delay: 1s;
+		animation-fill-mode: forwards;
+	}
+
+	.tag-text {
+		z-index: 200;
+		color: #254d74;
+		opacity: 0;
+		animation-name: tag-in;
+		animation-duration: 1s;
+		animation-delay: 1s;
+		animation-fill-mode: forwards;
+	}
+
+	.home-intro-tags p {
+		font-weight: 150;
+	}
+
+	.home-intro-tags {
+		padding-top: 50px;
+	}
+
+	.tags-hide {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 480px) {
+	.home-intro-pic {
+		animation-name: home-profile-scale;
+		animation-duration: 1s;
+		animation-delay: 1s;
+		animation-fill-mode: forwards;
+		animation-timing-function: linear;
+	}
+
+	.tag-text {
+		color: white;
+		text-align: left;
+		padding-left: 45vw;
+		margin: 10px 0;
+		opacity: 0;
+	}
+
+	.tag-text-1 {
+		animation-name: tag-in;
+		animation-duration: 1s;
+		animation-delay: 1.5s;
+		animation-fill-mode: forwards;
+		width: 75vw;
+		background: white; /* For browsers that do not support gradients */
+		background: -webkit-linear-gradient(left, red , white); /* For Safari 5.1 to 6.0 */
+		background: -o-linear-gradient(right, red, white); /* For Opera 11.1 to 12.0 */
+		background: -moz-linear-gradient(right, red, white); /* For Firefox 3.6 to 15 */
+		background: linear-gradient(to right, red , white); /* Standard syntax */
+	}
+
+	.tag-text-2 {
+		animation-name: tag-in;
+		animation-duration: 1s;
+		animation-delay: 1.7s;
+		animation-fill-mode: forwards;
+		width: 80vw;
+		background: white; /* For browsers that do not support gradients */
+		background: -webkit-linear-gradient(left, green , white); /* For Safari 5.1 to 6.0 */
+		background: -o-linear-gradient(right, green, white); /* For Opera 11.1 to 12.0 */
+		background: -moz-linear-gradient(right, green, white); /* For Firefox 3.6 to 15 */
+		background: linear-gradient(to right, green , white); /* Standard syntax */
+	}
+
+	.tag-text-3 {
+		animation-name: tag-in;
+		animation-duration: 1s;
+		animation-delay: 1.9s;
+		animation-fill-mode: forwards;
+		width: 85vw;
+		background: white; /* For browsers that do not support gradients */
+		background: -webkit-linear-gradient(left, blue , white); /* For Safari 5.1 to 6.0 */
+		background: -o-linear-gradient(right, blue, white); /* For Opera 11.1 to 12.0 */
+		background: -moz-linear-gradient(right, blue, white); /* For Firefox 3.6 to 15 */
+		background: linear-gradient(to right, blue , white); /* Standard syntax */
 	}
 }
