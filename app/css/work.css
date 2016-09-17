@@ -18,7 +18,7 @@
 .work-item {
 	margin-top: 20px;
 	padding-top: 30px;
-	border-top: 1px solid #fff;
+	border-top: 1px solid #ddd;
 }
 
 .content-container h3 {
@@ -33,7 +33,10 @@
 }
 
 .work img:hover {
-	border-color: white;
+	border-color: #99ccff;
+	-ms-transform: scale(0.98); /* IE 9 */
+    -webkit-transform: scale(0.98); /* Chrome, Safari, Opera */
+    transform: scale(0.98);
 }
 
 

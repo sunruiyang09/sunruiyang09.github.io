@@ -9,8 +9,22 @@ angular.module('myApp', [
   'myApp.about',
   'myApp.version',
   'ui.bootstrap'
-]).
-config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
+])
+
+.run(function($window) {
+  angular.element($window).bind('scroll', function(){
+  	var nav = document.getElementById('navbar');
+  	if(document.body.scrollTop > 50) {
+  	  angular.element(nav).removeClass('navbar-show');
+  	  angular.element(nav).addClass('navbar-hidden');
+  	}else{
+  	  angular.element(nav).removeClass('navbar-hidden');
+  	  angular.element(nav).addClass('navbar-show');
+  	}
+  });
+})
+
+.config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
   $locationProvider.hashPrefix('!');
 
   $routeProvider.otherwise({redirectTo: '/home'});

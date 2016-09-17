@@ -3,7 +3,7 @@
 angular.module('myApp.gallery', ['ngRoute'])
 
 .config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/gallery', {
+  $routeProvider.when('/interests', {
     templateUrl: 'scripts/gallery/gallery.html',
     controller: 'GalleryCtrl'
   });
@@ -12,7 +12,8 @@ angular.module('myApp.gallery', ['ngRoute'])
 .controller('GalleryCtrl', ['$scope', function($scope) {
   $scope.myInterval = 5000;
   $scope.noWrapSlides = false;
-  $scope.active = 0;
+  $scope.active1 = 0;
+  $scope.active2 = 0;
 
   $scope.graphSlides = [
     {
