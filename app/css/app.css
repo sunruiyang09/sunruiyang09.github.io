@@ -192,6 +192,10 @@ a {
 	background-color: #4a4a4f;
 	height: 140px;
 	text-align: center;
+	opacity: 0;
+	animation-name: show-view;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
 }
 
 .footer p {
