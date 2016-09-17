@@ -11,7 +11,7 @@ angular.module('myApp', [
   'ui.bootstrap'
 ])
 
-.run(function($window, $rootScope) {
+.run(function($window, $rootScope, $timeout) {
   angular.element($window).bind('scroll', function(){
   	var nav = document.getElementById('navbar');
   	if(document.body.scrollTop > 50) {
@@ -23,7 +23,9 @@ angular.module('myApp', [
   	}
   });
   angular.element($window).bind('load', function(){
-    $rootScope.myOpacity = 1;
+    $timeout(function(){
+      $rootScope.myOpacity = 1;
+    }, 1000);
   })
 })
 
